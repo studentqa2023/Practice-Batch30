@@ -86,19 +86,22 @@ public class LoginTest {
 
 		// Print in the console if a test pass or fail
 
-		if (mpf.getAccountname().isDisplayed()) {
-			System.out.println("Login successful!");
+		/*
+		 * if (mpf.getAccountname().isDisplayed()) {
+		 * System.out.println("Login successful!"); } else {
+		 * System.out.println("Login failed!"); }
+		 */
+
+		//Assertion
+		if(mpf.getLogoutbtn().isDisplayed()) {
+			Assert.assertTrue(mpf.getLogoutbtn().isDisplayed(), "Login Successful!");
 		} else {
-			System.out.println("Login failed!");
+			Assert.assertTrue(mpf.getLogoutbtn().isDisplayed(), "Login Failed!");
 		}
 		
 		test = extent.createTest("Login test");
-
-		/*
-		 * Assert.assertTrue(mpf.getLoginbtn().isDisplayed(), "Login failed");
-		 * Assert.assertTrue(false, null);
-		 */
-
+		
+		 
 	}
 
 	@AfterTest // tear down or close the browser

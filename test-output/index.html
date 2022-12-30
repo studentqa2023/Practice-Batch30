@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rezwa\AppData\Local\Temp\testng-eclipse--136673182\testng-customsuite.xml</span>
+                    <span>C:\Users\rezwa\AppData\Local\Temp\testng-eclipse--1617081007\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testng.LogoutTest" class="method navigator-link" hash-for-method="getLogout">getLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.practice.PracticeAssertEqual" class="method navigator-link" hash-for-method="getAssert">getAssert</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,17 +122,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.testng.LogoutTest</span>
+              <span class="class-name">com.practice.PracticeAssertEqual</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getLogout">
-                  </a> <!-- getLogout -->
-                  <span class="method-name">getLogout</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because &quot;this.driver&quot; is null
-	at com.testng.LoginTest.getLogin(LoginTest.java:55)
-	at com.testng.LogoutTest.getLogout(LogoutTest.java:35)
+                  <a name="getAssert">
+                  </a> <!-- getAssert -->
+                  <span class="method-name">getAssert</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [4] but found [2]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at com.practice.PracticeAssertEqual.getAssert(PracticeAssertEqual.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +175,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rezwa\AppData\Local\Temp\testng-eclipse--136673182\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rezwa\AppData\Local\Temp\testng-eclipse--1617081007\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +184,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testng.LogoutTest&quot;/&gt;
+      &lt;class name=&quot;com.practice.PracticeAssertEqual&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,14 +226,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getLogout')
-data.setCell(0, 2, 'com.testng.LogoutTest')
-data.setCell(0, 3, 5);
+data.setCell(0, 1, 'getAssert')
+data.setCell(0, 2, 'com.practice.PracticeAssertEqual')
+data.setCell(0, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 ms</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,16 +259,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testng.LogoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">com.practice.PracticeAssertEqual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">getLogout</span>
-                <span class="method-start">1986 ms</span>
+                <span class="method-name">getAssert</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

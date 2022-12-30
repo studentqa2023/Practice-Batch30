@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.LogoutTest">
+      <class name="com.practice.PracticeAssertEqual">
         <methods>
-          <include name="openBrowser"/>
-          <include name="getLogout"/>
+          <include name="getAssert"/>
         </methods>
-      </class> <!-- com.testng.LogoutTest -->
+      </class> <!-- com.practice.PracticeAssertEqual -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

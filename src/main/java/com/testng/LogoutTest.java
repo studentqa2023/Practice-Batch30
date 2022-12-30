@@ -1,15 +1,10 @@
 package com.testng;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.generic.BaseConfig;
 import com.generic.DriverManager;
 import com.pagefactory.MasterPageFactory;
 
@@ -27,16 +22,15 @@ public class LogoutTest {
 		driver = dm.getDriver(driver);
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
 	public void getLogout() {
 		
 		LoginTest obj = new LoginTest();
-		obj.getLogin();
+		//driver = obj.getLogin();
 		
-		
+		mpf = new MasterPageFactory(driver);
 		mpf.getDropdown().click();
-		mpf.getLogoutbtn().click();
+		mpf.getLogoutbtn().click(); 
 
 		// Go to Orange HRM URL
 		//driver.navigate().to(BaseConfig.getConfigValue("URL"));
